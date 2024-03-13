@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #9fc5e8;
+            /* Blue color for body */
+        }
+
+        .navbar-custom {
+            background-color: #d6e6fa;
+            /* Light shade of blue for navbar */
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: #000000;
+            /* Text color */
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #fff;
+            /* Hover color */
+            background-color: #779fdf;
+            border-radius: 20%;
+            /* Background color on hover */
+        }
+
+        /* Animation for Welcome section */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 2;
+            }
+        }
+
+        .welcome-section {
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        /* Social icons */
+        .social-icons a {
+            color: #000;
+            /* Black color */
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .social-icons a:hover {
+            color: #000;
+            /* Hover color */
+        }
+
+        .block1 {
+            background: #d48bff;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">internships and projects</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 welcome-section">
+                <!-- Main Content Area -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Your Picture -->
+                        <img src="myimage.jpeg" class="img-fluid rounded-circle" style="max-width: 180px;">
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Welcome to My Portfolio</h1>
+                        <h3>My name is Keerthana R</h3>
+                        <h5>Im from Maharaja Institute Of Technology, Mysuru</h5>
+                        <br>
+                        <p>Take a look at my social networking accounts</p>
+                        <!-- Social Icons -->
+                        <div class="social-icons">
+                            <a href="https://github.com/keerthana-r26"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/keerthana-r-b7b1b9239"><i
+                                    class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="mailto:keerthanakashyap0123@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Sidebar or Additional Content -->
+                <h3>Recent Projects</h3>
+                <h6>Take a look at my projects that i have accoplished </h6>
+                <div>
+                    <h5>1.canteen Management project</h5>
+                    <p>- Using SQL databases ,HTML/CSS,
+                        JavaScript ,PHP. </br>To know more, <a href="https://github.com">click here</a> </p>
+                </div>
+                <div>
+                    <h5>2.USN validator and manager project</h5>
+                    <p>- Using File Structure using C++ </br>To know more, <a href="https://github.com">click here</a>
+                    </p>
+                </div>
+                <div>
+                    <h5>3.Mobile Application Development project
+                    </h5>
+                    <p>-Using Android Studio</br>To know more, <a href="https://github.com">click here</a> </p>
+                </div>
+
+            </div>
+            <br>
+            <center>
+                <div class="col-md-4">
+                    <!-- About Me Section -->
+                    <div class="about-me-section  p-4 shadow block1">
+                        <h3>Who Am I?</h3>
+                        <p style="font-size: 15px;">"I am a final-year student pursuing Information Science and
+                            Engineering at Maharaja Institute
+                            of Technology, Mysore,
+                            where I have diligently honed my skills in web development,Python,DBMS Etc. Presently, I am
+                            gaining
+                            invaluable experience as a Web
+                            Development Intern at Nishkam Technologies Pvt Ltd. As a fresher my I look for a opportunity
+                            where i can make the best of my potential and contribute to the organisation & to self
+                            growth.
+                        </p>
+                        <button class="btn"><a href="about.html">Read
+                                More</a></button>
+                    </div>
+                    <!-- Download Resume -->
+                    <div class="download-resume mt-4 p-3 block1 shadow">
+                        <h3>Download Resume</h3>
+                        <p>Download my resume to learn more about my experience and skills.</p>
+                        <a href="https://drive.google.com/file/d/11A5L6d_l64eC0RnNRKKQpQdV5-mwYwFu/view"
+                            class="btn btn-success">Download</a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
